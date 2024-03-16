@@ -4,7 +4,7 @@
         <div class="nav-links">
             {#if nav.isShow}
 
-            <a href={nav.href} class="link">{nav.title}</a>
+                <a href={nav.href} class="link">{nav.title}</a>
 
             {/if}
         </div>

@@ -2,11 +2,12 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Кордюков Александр</a>
         <div class="nav-links">
-            {#if link.isShow}
+        <!-- svelte-ignore missing-declaration -->
+        {#if link.isShow}
 
-            <a href={link.href} class="link">{link.title}</a>
+        <a href={link.href} class="link">{link.title}</a>
 
-            {/if}
+        {/if}
         </div>
     </div>
 </nav>

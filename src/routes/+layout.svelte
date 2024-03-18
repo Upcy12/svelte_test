@@ -3,10 +3,11 @@
         <a href="/" class="nav-logo" title="Back to Homepage">Кордюков Александр</a>
         <div class="nav-links">
             <h1>lol</h1>
-            {#if nav.isShow=true}
-                <a href={nav.href} class="link">{nav.title}</a>
+            {#each nav as link}
 
-            {/if}
+            <a href={link.href} class="link">{link.title}</a>
+
+            {/each}
         </div>
     </div>
 </nav>

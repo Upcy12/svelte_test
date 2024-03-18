@@ -42,7 +42,7 @@
             href:'/temp',
             isShow:false,
         }
-    ]
+    ];
 </script>
 <style>
     .container{

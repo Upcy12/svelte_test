@@ -96,7 +96,7 @@ align-items: center;
 
 }
 
-.todo__buttons {
+.todo\_\_buttons {
 display: flex;
 align-items: center;
 margin-left: Irem;

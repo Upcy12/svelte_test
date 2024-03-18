@@ -2,7 +2,6 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Кордюков Александр</a>
         <div class="nav-links">
-            <h1>lol</h1>
             {#each nav as link}
 
             <a href={link.href} class="link">{link.title}</a>

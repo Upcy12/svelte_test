@@ -3,8 +3,8 @@
         <a href="/" class="nav-logo" title="Back to Homepage">Кордюков Александр</a>
         <div class="nav-links">
             {#if nav.isShow}
-
-                <a href={nav.href} class="link">{nav.title}</a>
+            console.log('loh')
+            <a href={nav.href} class="link">{nav.title}</a>
 
             {/if}
         </div>

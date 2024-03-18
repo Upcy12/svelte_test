@@ -2,6 +2,7 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Кордюков Александр</a>
         <div class="nav-links">
+            <h1>loh</h1>
             {#if nav.isShow}
             console.log('loh')
             <a href={nav.href} class="link">{nav.title}</a>

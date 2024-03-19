@@ -1,30 +1,3 @@
-<script>
-    import Icon from '../../../../components/Icon.svelte'
-    
-    let newItem='';
-    let todoList =[];
-    function add(){
-        console.log(newItem)
-        if (newItem!==''){
-            todoList=[
-                todoList,
-                {
-                    task:newItem,
-                    completed:false,
-                },
-            ];
-            newItem='';
-        };
-    }
-    function remove(index){
-        todoList =todoList;
-    }
-    function complete(index){
-        todoList[index].completed=!todoList[index].completed;
-    }
-</script>
-
-
 <main>
     <form on:submit|preventDefault={add}>
         <input bind:value={newItem} placeholder="Enter to-do"/>
@@ -49,6 +22,31 @@
     </div>
 </main>
 
+<script>
+    import Icon from '../../../../components/Icon.svelte'
+    
+    let newItem='';
+    let todoList =[];
+    function add(){
+        console.log(newItem)
+        if (newItem!==''){
+            todoList=[
+                ...todoList,
+                {
+                    task:newItem,
+                    completed:false,
+                },
+            ];
+            newItem='';
+        }
+    }
+    function remove(index){
+        todoList =todoList;
+    }
+    function complete(index){
+        todoList[index].completed=!todoList[index].completed;
+    }
+</script>
 
 
 <style>

@@ -7,8 +7,8 @@
             todoList=[
                 ...todoList,
                 {
-                    Задача:newItem,
-                    Завершено:false,
+                    task:newItem,
+                    completed:false,
                 },
             ];
             newItem='';

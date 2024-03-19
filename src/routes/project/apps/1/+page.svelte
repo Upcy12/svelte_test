@@ -50,103 +50,103 @@
 
 
 <style>
-main {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        padding: Svmin;
+        box-sizing: border-box;
+        background: antiquewhite;
+
+    }
+
+    form {
+        width: 100%;
+        max-width: SO0px;
+        display: flex;
+        align-items: center;
+        margin-bottom: Irem;
+    }
+
+
+    input {
+        flex-grow: 1;
+        width: 0;
+        border: none;
+        border-bottom: 1px solid black;
+        background: transparent;
+        box-shadow: none;
+        font-size: 1.2rem;
+        margin: 0;
+        outline: none;
+
+    }
+
+    .todo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    padding: Svmin;
-    box-sizing: border-box;
-    background: antiquewhite;
-
-}
-
-form {
-    width: 100%;
-    max-width: SO0px;
-    display: flex;
-    align-items: center;
-    margin-bottom: Irem;
-}
-
-
-input {
-    flex-grow: 1;
-    width: 0;
-    border: none;
-    border-bottom: 1px solid black;
-    background: transparent;
-    box-shadow: none;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0 00 / 20%);
+    background-color: hsla(0, 0%, 100%, 0.2);
+    margin-top: 1rem;
     font-size: 1.2rem;
-    margin: 0;
-    outline: none;
+    justify-content: space-between;
+    align-items: center;
 
-}
+    }
 
-.todo {
-display: flex;
-padding: 20px;
-border-radius: 20px;
-box-shadow: 0 0 15px rgb(0 00 / 20%);
-background-color: hsla(0, 0%, 100%, 0.2);
-margin-top: 1rem;
-font-size: 1.2rem;
-justify-content: space-between;
-align-items: center;
+    .todo\_\_buttons {
+    display: flex;
+    align-items: center;
+    margin-left: Irem;
+    }
 
-}
+    .todo button {
+    width: 32px;
+    height: 32px;
+    }
 
-.todo\_\_buttons {
-display: flex;
-align-items: center;
-margin-left: Irem;
-}
+    h1{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 2em 0;
+    }
 
-.todo button {
-width: 32px;
-height: 32px;
-}
+    button{
+        background-color: transparent;
+        border: none;
+    }
 
-h1{
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 2em 0;
-}
+    button.delete,
+    button.delete:hover{
+        color: brown;
+        transition: color 100ms ease-out;
 
-button{
-    background-color: transparent;
-    border: none;
-}
+    }
 
-button.delete,
-button.delete:hover{
-    color: brown;
-    transition: color 100ms ease-out;
+    button.complete,
+    button.complete:hover{
+        color: cadetblue;
+        transition: color 100ms ease-out;
+    }
 
-}
+    .todo.completed{
+        color: slategray;
+    }
 
-button.complete,
-button.complete:hover{
-    color: cadetblue;
-    transition: color 100ms ease-out;
-}
+    .todo.completed .todo\_\_text{
+        text-decoration: line-through;
+    }
 
-.todo.completed{
-    color: slategray;
-}
+    .todo.completed button {
+        color: silver;
+    }
 
-.todo.completed .todo\_\_text{
-    text-decoration: line-through;
-}
-
-.todo.completed button {
-    color: silver;
-}
-
-.todos{
-    width: 100%;
-    max-width: 500px;
-}
+    .todos{
+        width: 100%;
+        max-width: 500px;
+    }
 </style>
 
 

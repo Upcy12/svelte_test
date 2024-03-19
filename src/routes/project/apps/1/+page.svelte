@@ -1,5 +1,6 @@
 <script>
     import Icon from '../../../../components/Icon.svelte'
+    console.log(newItem)
     let newItem='';
     let todoList =[];
     function add(){

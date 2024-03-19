@@ -1,9 +1,10 @@
 <script>
     import Icon from '../../../../components/Icon.svelte'
-    console.log(newItem)
+    
     let newItem='';
     let todoList =[];
     function add(){
+        console.log(newItem)
         if (newItem!==''){
             todoList=[
                 todoList,
@@ -13,7 +14,7 @@
                 },
             ];
             newItem='';
-        }
+        };
     }
     function remove(index){
         todoList =todoList;

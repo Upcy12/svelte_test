@@ -5,7 +5,7 @@
     function add(){
         if (newItem!==''){
             todoList=[
-                ...todoList,
+                todoList,
                 {
                     task:newItem,
                     completed:false,

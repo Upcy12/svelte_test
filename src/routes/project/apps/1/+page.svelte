@@ -1,10 +1,10 @@
+<h1>My to-do list</h1>
 <main>
     <form on:submit|preventDefault={add}>
         <input bind:value={newItem} placeholder="Enter to-do"/>
         <button class="add-todo" on:click={add}><span>+</span></button>
         <h1>My to-do list</h1>
     </form>
-    <h1>My to-do list</h1>
     <div class="todos">
         {#each todoList as item,index }
             <div class="todo" class:completed={item.completed}>
